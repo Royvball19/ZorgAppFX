@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane fx:id="menuAnchor" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.royvball19.zorgappfx.controllers.MenuAnchorController">
    <children>
-      <ToolBar layoutX="43.0" prefHeight="40.0" prefWidth="215.0" style="-fx-background-color: null;">
+      <ToolBar prefHeight="40.0" prefWidth="302.0" style="-fx-background-color: null;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
-          <Button fx:id="homeButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#homeButtonListener" prefWidth="65.0" text="Home" />
-            <Button fx:id="medicineButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#medicineButtonListener" prefWidth="65.0" text="Medicine" />
-            <Button fx:id="weightButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#weightButtonListener" prefWidth="65.0" text="Weight" />
+          <Button fx:id="homeButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#homeButtonListener" prefWidth="70.0" text="Home" />
+            <Button fx:id="medicineButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#medicineButtonListener" prefWidth="70.0" text="Medicine" />
+            <Button fx:id="weightButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#weightButtonListener" prefWidth="70.0" text="Weight">
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis></Button>
         </items>
+         <padding>
+            <Insets left="41.0" />
+         </padding>
       </ToolBar>
    </children>
 </AnchorPane>

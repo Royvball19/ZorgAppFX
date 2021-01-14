@@ -1,4 +1,4 @@
-package nl.royvball19.zorgappfx;
+package nl.royvball19.zorgappfx.model;
 
 public class Medicine
 {

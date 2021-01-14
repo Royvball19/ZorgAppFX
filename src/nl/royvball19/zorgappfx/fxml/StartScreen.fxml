@@ -21,15 +21,14 @@
         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
     </rowConstraints>
     <children>
-        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="293.0" text="Welcome" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="293.0" text="HealthCare" GridPane.halignment="CENTER" GridPane.valignment="TOP">
          <font>
             <Font size="20.0" />
          </font>
          <GridPane.margin>
-            <Insets top="5.0" />
+            <Insets top="20.0" />
          </GridPane.margin></Label>
-      <Button id="logInButton" fx:id="logInButton" mnemonicParsing="false" onAction="#logInButtonListener" prefHeight="25.0" prefWidth="85.0" text="Login" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-      <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Close App" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+      <Button id="logInButton" fx:id="logInButton" mnemonicParsing="false" onAction="#logInButtonListener" prefHeight="25.0" prefWidth="85.0" text="Login" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
       <ImageView id="appIconStartScreen" fx:id="appIconStartScreen" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
          <GridPane.margin>
             <Insets />
@@ -38,13 +37,6 @@
             <Image url="https://image.flaticon.com/icons/png/512/250/250518.png" />
          </image>
       </ImageView>
-      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="293.0" text="to the HealthCare App" GridPane.valignment="TOP">
-         <font>
-            <Font size="20.0" />
-         </font>
-         <GridPane.margin>
-            <Insets top="30.0" />
-         </GridPane.margin>
-      </Label>
+      <Label alignment="CENTER" prefHeight="51.0" prefWidth="222.0" text="Welcome to the HealthCare App!" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
     </children>
 </GridPane>

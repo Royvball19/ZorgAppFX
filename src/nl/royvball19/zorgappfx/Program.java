@@ -6,7 +6,6 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.util.ArrayList;
@@ -19,17 +18,17 @@ public class Program extends Application
 
     static List<GridPane> grid = new ArrayList<>();
 
-    private static int currentIndex =0;
+    private static int currentIndex = 0;
 
     @Override
     public void start(Stage primaryStage) throws Exception
     {
         try
         {
-            root = (AnchorPane)FXMLLoader.load(getClass().getResource("fxml/Anchor.fxml"));
+            root = (AnchorPane) FXMLLoader.load(getClass().getResource("fxml/Anchor.fxml"));
 
             grid.add((GridPane) FXMLLoader.load(getClass().getResource("fxml/StartScreen.fxml")));
-            grid.add((GridPane)FXMLLoader.load(getClass().getResource("fxml/LoginScreen.fxml")));
+            grid.add((GridPane) FXMLLoader.load(getClass().getResource("fxml/LoginScreen.fxml")));
 
             root.getChildren().add(grid.get(0));
             Scene scene = new Scene(root, 300, 400);
@@ -40,7 +39,6 @@ public class Program extends Application
             primaryStage.show();
 
 
-
         } catch (Exception e)
         {
             e.printStackTrace();
@@ -48,10 +46,9 @@ public class Program extends Application
     }
 
 
-
     private void init_app()
     {
-        for (int i =0; i < grid.size(); i++)
+        for (int i = 0; i < grid.size(); i++)
         {
 
         }
@@ -69,9 +66,18 @@ public class Program extends Application
         currentIndex = index;
     }
 
-
     public static void main(String[] args)
     {
+        System.out.println("Loading driver...");
+        try
+        {
+            Class.forName("com.mysql.jdbc.Driver");
+            System.out.println("Driver loaded!\n");
+        } catch (ClassNotFoundException e)
+        {
+            throw new IllegalStateException("Cannot find the driver in the classpath!", e);
+        }
+
         launch(args);
     }
 }

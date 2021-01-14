@@ -4,14 +4,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
-import javafx.stage.Stage;
 import nl.royvball19.zorgappfx.Program;
 
 import java.io.IOException;
@@ -31,12 +26,10 @@ public class MenuAnchorController implements Initializable
 
     @FXML private AnchorPane menuAnchor;
 
-    @FXML
-    private Button homeButton;
-    @FXML
-    private Button medicineButton;
-    @FXML
-    private Button weightButton;
+    @FXML private Button homeButton;
+    @FXML private Button medicineButton;
+    @FXML private Button weightButton;
+
 
     @FXML
     public void homeButtonListener (ActionEvent event) throws IOException {
@@ -63,6 +56,7 @@ public class MenuAnchorController implements Initializable
             grid.add((GridPane)FXMLLoader.load(Program.class.getResource("fxml/MenuWeight.fxml")));
 
             menuAnchor.getChildren().add(grid.get(0));
+
 
         } catch (Exception e)
         {
