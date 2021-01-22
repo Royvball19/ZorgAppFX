@@ -14,10 +14,9 @@ import java.util.List;
 public class Program extends Application
 {
 
-    static AnchorPane root;
-
-    static List<GridPane> grid = new ArrayList<>();
-
+    // Attributes
+    private static AnchorPane root;
+    private static List<GridPane> grid = new ArrayList<>();
     private static int currentIndex = 0;
 
     @Override
@@ -42,15 +41,6 @@ public class Program extends Application
         } catch (Exception e)
         {
             e.printStackTrace();
-        }
-    }
-
-
-    private void init_app()
-    {
-        for (int i = 0; i < grid.size(); i++)
-        {
-
         }
     }
 

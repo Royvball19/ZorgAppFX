@@ -4,7 +4,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import nl.royvball19.zorgappfx.Program;
@@ -18,17 +17,13 @@ import java.util.ResourceBundle;
 
 public class MenuAnchorController implements Initializable
 {
+    // Attributes
     private AnchorPane root;
-
     private List<GridPane> grid = new ArrayList<>();
-
     private static int currentIndex =0;
 
+    // FXML Attributes
     @FXML private AnchorPane menuAnchor;
-
-    @FXML private Button homeButton;
-    @FXML private Button medicineButton;
-    @FXML private Button weightButton;
 
 
     @FXML
@@ -61,14 +56,6 @@ public class MenuAnchorController implements Initializable
         } catch (Exception e)
         {
             e.printStackTrace();
-        }
-    }
-
-    private void init_app()
-    {
-        for (int i =0; i < grid.size(); i++)
-        {
-
         }
     }
 

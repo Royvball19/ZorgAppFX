@@ -11,8 +11,6 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import nl.royvball19.zorgappfx.Program;
 
-import javax.swing.text.html.ImageView;
-import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -23,11 +21,12 @@ import java.util.Scanner;
 public class StartScreenController implements Initializable
 {
 
-    @FXML private Button logInButton;
-
-    @FXML private Button closeApplicationButton;
-
+    // Attributes
     private int currentLoggedUserID;
+
+    // FXML Attributes
+    @FXML private Button logInButton;
+    @FXML private Button closeApplicationButton;
 
     @FXML
     public void logInButtonListener(ActionEvent event) throws IOException

@@ -13,8 +13,8 @@ import java.util.ResourceBundle;
 public class MenuMedicineController implements Initializable
 {
 
+    // FXML Attributes
     @FXML private TableView<Medicine> medicinesTableView;
-
     @FXML private TableColumn<Medicine, String> medicineNameColumn;
     @FXML private TableColumn<Medicine, String> medicineDescriptionColumn;
     @FXML private TableColumn<Medicine, String> medicineTypeColumn;

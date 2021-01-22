@@ -10,18 +10,13 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import nl.royvball19.zorgappfx.Program;
 
-import javax.swing.*;
 import java.awt.*;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class MenuHomeController implements Initializable
 {
-
-    @FXML private Button nextScreenButton;
-
 
     @FXML
     public void logOutButtonListener(ActionEvent event) throws Exception

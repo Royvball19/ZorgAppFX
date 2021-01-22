@@ -33,22 +33,20 @@ import java.util.logging.Logger;
 
 public class LoginScreenController implements Initializable
 {
+    // FXML Attributes
     @FXML private GridPane loginGridPane;
-
     @FXML private Button loginButton;
-
     @FXML private TextField userNameTextField;
     @FXML private PasswordField passwordField;
 
-    private int currentLoggedUserID;
-
+    // Attributes
     private String url = "jdbc:mysql://localhost:3306/zorgapp";
     private String username = "db";
     private String password = "wachtwoord";
-    Connection con;
-    PreparedStatement pst;
-    PreparedStatement pst2;
-    ResultSet rs;
+    private Connection con;
+    private PreparedStatement pst;
+    private PreparedStatement pst2;
+    private ResultSet rs;
 
     @Override
     public void initialize(URL location, ResourceBundle resources)
